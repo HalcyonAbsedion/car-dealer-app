@@ -1,0 +1,16 @@
+[
+    {
+      "imageUrl": "https://imgd.aeplcdn.com/1280x720/n/cw/ec/110233/camry-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80",
+      "description": "2025",
+      "name": "Toyota Camry",
+      "price": 22000.0
+    }
+    ,
+  {
+    "imageUrl": "https://images.dealer.com/ddc/vehicles/2024/Hyundai/Elantra%20N/Sedan/color/Intense%20Blue-YP5-28,42,84-640-en_US.jpghttps://images.dealer.com/ddc/vehicles/2024/Hyundai/Elantra%20N/Sedan/color/Intense%20Blue-YP5-28,42,84-640-en_US.jpg",
+    "description": "A luxurious car",
+    "name": "Car 2",
+    "price": 20000.0
+  }
+]
+  
