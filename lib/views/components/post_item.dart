@@ -11,44 +11,69 @@ class PostTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: 25),
+      margin: const EdgeInsets.only(left: 25),
       width: 280,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(12),
       ),
       // BoxDecoration
-      child: Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            // car pic
-            ClipRRect(
-              borderRadius: BorderRadius.circular(12),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(25),
-                child: Image.network(
-                  car.imageUrl!,
-                  width: 400,
-                  height: 300,
-                ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          // car pic
+          ClipRRect(
+            borderRadius: BorderRadius.circular(12),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(25),
+              child: Image.network(
+                car.imageUrl!,
+                width: 400,
+                height: 300,
               ),
             ),
-            // ClipRRect
-            // description
-            Text(car.description!, style: TextStyle(color: Colors.black)),
-            Row(
+          ),
+          // ClipRRect
+          // description
+          Text("${car.price!.toString()}\$",
+              style: TextStyle(
+                  color: Theme.of(context).colorScheme.onPrimary,
+                  fontStyle: FontStyle.italic,
+                  fontSize: 19,
+                  fontWeight: FontWeight.w300)),
+          Padding(
+            padding: const EdgeInsets.only(left: 25),
+            child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Column(
-                  children: [Text(car.name!), Text(car.price.toString())],
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      car.name!,
+                      style: const TextStyle(
+                          fontWeight: FontWeight.bold, fontSize: 20),
+                    ),
+                    Text(car.description!)
+                  ],
                 ),
-                Icon(Icons.add)
+                Container(
+                    padding: const EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.onPrimary,
+                        borderRadius: const BorderRadius.only(
+                            bottomRight: Radius.circular(12.0),
+                            topLeft: Radius.circular(12.0))),
+                    child: Icon(
+                      Icons.keyboard_arrow_right,
+                      size: 25,
+                      color: Theme.of(context).colorScheme.primary,
+                    ))
               ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

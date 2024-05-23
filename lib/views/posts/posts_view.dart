@@ -8,7 +8,7 @@ import '../../view_models/posts_view_model.dart';
 class PostsView extends StatelessWidget {
   PostsView({Key? key}) : super(key: key);
   //Dependency Injection
-  var postsViewModel = PostsViewModel(postsRepository: PostsAPI());
+  final postsViewModel = PostsViewModel(postsRepository: PostsAPI());
 
   @override
   Widget build(BuildContext context) {

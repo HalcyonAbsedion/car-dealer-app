@@ -1,16 +1,28 @@
 [
     {
       "imageUrl": "https://imgd.aeplcdn.com/1280x720/n/cw/ec/110233/camry-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80",
-      "description": "2025",
+      "description": "2018",
       "name": "Toyota Camry",
-      "price": 22000.0
+      "price": 17000.0
     }
     ,
   {
-    "imageUrl": "https://images.dealer.com/ddc/vehicles/2024/Hyundai/Elantra%20N/Sedan/color/Intense%20Blue-YP5-28,42,84-640-en_US.jpghttps://images.dealer.com/ddc/vehicles/2024/Hyundai/Elantra%20N/Sedan/color/Intense%20Blue-YP5-28,42,84-640-en_US.jpg",
-    "description": "A luxurious car",
-    "name": "Car 2",
-    "price": 20000.0
+    "imageUrl": "https://www-europe.nissan-cdn.net/content/dam/Nissan/nissan_middle_east/vehicles/patrol/2022/grades/2022-Patrol-LE-PLATINUM-CITY.jpg.ximg.l_12_m.smart.jpg",
+    "description": "2024",
+    "name": "Nissan Patrol",
+    "price": 57000.0
+  },
+  {
+    "imageUrl": "https://inv.assets.ansira.net/ChromeColorMatch/us/TRANSPARENT_cc_2023HYC020070_01_1280_R2P.png",
+    "description": "2023",
+    "name": "Hyundai Elantra",
+    "price": 23000.0
+  },
+  {
+    "imageUrl": "https://www.driveninja.com/static/8043e480277f3c3f6ae9c347fcef97d2/0e021/1_-_Toyota_Land_Cruiser.jpg",
+    "description": "2022",
+    "name": "Toyota Land Cruiser",
+    "price": 49000.0
   }
 ]
   

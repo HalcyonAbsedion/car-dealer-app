@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:dio/dio.dart';
+// import 'package:dio/dio.dart';
 import 'package:flutter/services.dart';
 
 import '../../models/car_model.dart';
@@ -19,14 +19,13 @@ class PostsAPI extends PostsRepository {
       List<dynamic> data = json.decode(response);
       return data.map((post) => PostModel.fromJson(post)).toList();
     } catch (exception) {
-      print(exception);
+      // print(exception);
     }
     return posts;
   }
 
   @override
   Future<PostModel> getPostById(int id) {
-    // TODO: implement getPostById
     throw UnimplementedError();
   }
 }
