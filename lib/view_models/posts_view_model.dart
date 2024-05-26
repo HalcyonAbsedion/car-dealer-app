@@ -3,7 +3,6 @@ import '../repositories/posts/post_repository.dart';
 import 'car_view_model.dart';
 
 class PostsViewModel {
-  final String title = "All Posts";
   PostsRepository? postsRepository;
   PostsViewModel({this.postsRepository});
 

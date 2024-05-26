@@ -5,14 +5,14 @@ import '../../view_models/car_view_model.dart';
 class PostTile extends StatelessWidget {
   final PostViewModel car;
   const PostTile({
-    Key? key,
+    super.key,
     required this.car,
-  }) : super(key: key);
+  });
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(left: 25),
-      width: 280,
+      width: 285,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(12),
@@ -22,14 +22,15 @@ class PostTile extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           // car pic
-          ClipRRect(
-            borderRadius: BorderRadius.circular(12),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 30.0),
             child: ClipRRect(
-              borderRadius: BorderRadius.circular(25),
-              child: Image.network(
-                car.imageUrl!,
-                width: 400,
-                height: 300,
+              borderRadius: BorderRadius.circular(12),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(25),
+                child: Image.network(
+                  car.imageUrl!,
+                ),
               ),
             ),
           ),
